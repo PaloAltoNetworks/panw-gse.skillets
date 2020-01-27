@@ -1,6 +1,8 @@
 # PANW-GSE Skillets
 
-A couple of Ansible modules to execute PAN-OS, Panorama, or Pan-Validation Skillets. 
+A couple of Ansible modules to execute PAN-OS, Panorama, or Pan-Validation Skillets. For more information, see
+https://live.paloaltonetworks.com/t5/Skillets/ct-p/Skillets 
+
 
 ## Project Status
 
@@ -9,7 +11,7 @@ Warning! This project is not-yet released and is under heavy development!
 
 ## Installation
 
-The recommended way to install the modules is installing the panw-gse.Skillets
+The recommended way to install the modules is (will soon be...) installing the panw-gse.Skillets
 Ansible Galaxy role:
 
 ```bash
