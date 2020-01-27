@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Nathan Embery
+  description: modules for working with Skillets from https://github.com/PaloAltoNetworks/panw-gse.skillets
+  company: Palo Alto Networks
+
+  license: Apache
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: GenericLinux
+      versions:
+        - all
+
+  galaxy_tags: [
+    networking,
+    paloaltonetworks,
+    panw,
+    security,
+    skillets
+  ]
+
+dependencies: []
