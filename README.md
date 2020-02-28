@@ -20,6 +20,15 @@ $ ansible-galaxy install panw-gse.skillets
 
 ```
 
+
+---
+**NOTE**
+
+This module has not yet been pushed into Ansible galaxy as it is still in heavy development! 
+
+---
+
+
 ## Sample playbooks
 
 ```yaml
@@ -51,10 +60,26 @@ $ ansible-galaxy install panw-gse.skillets
 
 ```
 
+## Basic Usage
+
+`execute_skillet` is the primary function to execute a skillet. The arguments are:
+
+* skillet_path: directory in which to recursively search for skillets. This can be the root of a cloned git 
+repository for example
+
+* skillet: This is the `name` of the skillet as defined by the `name` attribute in the .meta-cnc skillet definition
+
+* provider: This is a provider dict similar to the standard PAN-OS modules. Expected keys are: 'ip_address', 
+'username', 'password'.
+
+* vars: This is where you will customize the skillet variables. Any item present in this list will set the value
+of a `variable` defined in the .meta-cnc skillet definition file. Any variable not defined here will use the 
+default value from the skillet.
+
 ## Support
 
-This template/solution is released under an as-is, best effort, support policy. These scripts should be seen as c
-ommunity supported and Palo Alto Networks will contribute our expertise as and when possible. We do not provide 
+This template/solution is released under an as-is, best effort, support policy. These scripts should be seen as 
+community supported and Palo Alto Networks will contribute our expertise as and when possible. We do not provide 
 technical support or help in using or troubleshooting the components of the project through our normal support options 
 such as Palo Alto Networks support teams, or ASC (Authorized Support Centers) partners and backline support options.
  The underlying product used (the VM-Series firewall) by the scripts or templates are still supported, but the support 
